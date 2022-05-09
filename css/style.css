@@ -1,0 +1,32 @@
+.container {
+    /* padding: 0%;
+    margin: 0%; */
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    /* border: 1px solid black; */
+    height: 700px;
+    width: 700px;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* gap: 10px; */
+}
+
+.row {
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    height: 6.25%;
+    margin: 0%;
+}
+
+.column {
+    border-left: 1px solid black;
+    margin: 0%;
+    width: 6.25%;
+}
+
+/* .last-column {
+    border-right: 0.5px solid black;
+} */
+
