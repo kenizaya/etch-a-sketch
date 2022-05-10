@@ -6,14 +6,12 @@ function createGrid(n) {
     for (let i = 0; i < n; i++) {
         const row = document.createElement("div");
         row.classList.add('row');
-        console.log(row);
         container.appendChild(row);
         row.style.height = `${100/n}%`;
 
         for (let j = 0; j < n; j++) {
             const column = document.createElement("div");
             column.classList.add('column');
-            console.log(column);
             row.appendChild(column);
             column.style.width = `${100/n}%`;
             
@@ -47,11 +45,9 @@ function createGrid(n) {
     
     do {
         input = prompt("Enter grid size(max: 100): ");
-    } while (input > 101 && !Number.isInteger(input));
+    } while (input > 100 && !Number.isInteger(input));
 
-    console.log(input);
-
-    if (input < 101 && input !== null) {
+    if (input <= 100 && input !== null) {
         Array.from(document.getElementsByClassName("row")).forEach(row => row.remove());
         Array.from(document.getElementsByClassName("column")).forEach(column => column.remove());
         return input;
