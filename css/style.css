@@ -6,16 +6,18 @@
 
 body {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
 }
 
-.container {
+#container {
     border-top: 1px solid black;
     border-right: 1px solid black;
     height: 700px;
     width: 700px;
+    margin: 0;
     
 }
 
@@ -39,3 +41,10 @@ body {
     background: black;
 }
 
+#btn {
+    padding: 5px;
+    margin: 5px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 22px;
+}
