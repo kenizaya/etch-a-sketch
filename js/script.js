@@ -10,12 +10,26 @@ function createGrid() {
         for (let j = 0; j < 16; j++) {
             const column = document.createElement("div");
             column.classList.add('column');
-            console.log(column);
+            // console.log(column);
             row.appendChild(column);
         }                   
     }
+
+    changeColor();
+
  }
 
+ function changeColor() {
+    columns = Array.from(document.getElementsByClassName("column"));
+
+    columns.forEach(column => {
+        column.addEventListener('mouseover', () => {
+            column.classList.add("hovered");
+        }
+        );
+        
+    });
+ }
 
  createGrid();
     

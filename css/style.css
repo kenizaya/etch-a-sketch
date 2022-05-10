@@ -17,13 +17,18 @@
     display: flex;
     justify-content: space-between;
     height: 6.25%;
-    margin: 0%;
+    margin: 0;
+    padding: 0;
 }
 
 .column {
     border-left: 1px solid black;
-    margin: 0%;
+    margin: 0;
+    padding: 0;
     width: 6.25%;
 }
 
+.hovered {
+    background: black;
+}
 
